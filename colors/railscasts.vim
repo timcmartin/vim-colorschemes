@@ -1,14 +1,35 @@
+" Name:         railscasts.vim
+" Maintainer:   Nick Moffitt <nick@zork.net>
+" Last Change:  01 Mar 2008
+" License:      WTFPL <http://sam.zoy.org/wtfpl/>
+" Version:      2.1
 "
-" Name:    railscasts.vim
-" URL:     https://github.com/jpo/vim-railscasts-theme
-" License: MIT <http://opensource.org/licenses/MIT>
+" This theme is based on Josh O'Rourke's Vim clone of the railscast
+" textmate theme.  The key thing I have done here is supply 256-color
+" terminal equivalents for as many of the colors as possible, and fixed
+" up some of the funny behaviors for editing e-mails and such.
 "
+" To use for gvim:
+" 1: install this file as ~/.vim/colors/railscasts.vim
+" 2: put "colorscheme railscasts" in your .gvimrc
+"
+" If you are using Ubuntu, you can get the benefit of this in your
+" terminals using ordinary vim by taking the following steps:
+"
+" 1: sudo apt-get install ncurses-term
+" 2: put the following in your .vimrc
+"     if $COLORTERM == 'gnome-terminal'
+"         set term=gnome-256color
+"         colorscheme railscasts
+"     else
+"         colorscheme default
+"     endif
+" 3: if you wish to use this with screen, add the following to your .screenrc:
+"     attrcolor b ".I"
+"     termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+"     defbce "on"
+"     term screen-256color-bce
 
-set background=dark
-hi clear
-if exists("syntax_on")
-  syntax reset
-endif
 let g:colors_name = "railscasts"
 
 hi Normal                    guifg=#e4e4e4 guibg=#121212 ctermfg=254 ctermbg=233
@@ -96,7 +117,6 @@ hi diffAdded                 guifg=#008700 ctermfg=28
 hi diffRemoved               guifg=#800000 ctermfg=1
 hi diffNewFile               guifg=#FFFFFF guibg=NONE gui=bold ctermfg=15 ctermbg=NONE cterm=bold
 hi diffFile                  guifg=#FFFFFF guibg=NONE gui=bold ctermfg=15 ctermbg=NONE cterm=bold
-
 
 " Ruby
 " ----
