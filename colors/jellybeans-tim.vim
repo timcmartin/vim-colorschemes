@@ -407,4 +407,14 @@ delf s:rgb_number
 delf s:grey_color
 delf s:grey_level
 delf s:grey_number
+
+" This used to be in vimrc after setting colorscheme
+" Adding for transparent Linux Background
+hi Normal guibg=NONE ctermbg=NONE
+hi NonText guibg=NONE ctermbg=NONE
+" Make line numbers red
+hi LineNr term=bold cterm=NONE ctermfg=DarkRed ctermbg=NONE gui=NONE guifg=DarkRed guibg=NONE
+" remove underline from line numbers and current line yellow
+hi CursorLineNr term=bold cterm=bold ctermfg=11 gui=bold
+
 " }}}
