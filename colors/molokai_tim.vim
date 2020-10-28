@@ -285,12 +285,13 @@ if &t_Co > 255
    hi link rubyConstant               Type
 
    " Vimwiki
-   hi VimwikiHeader1 ctermfg=10
-   hi VimwikiHeader2 ctermfg=9
+   hi VimwikiHeader1 ctermfg=9
+   hi VimwikiHeader2 ctermfg=10
    hi VimwikiHeader3 ctermfg=11
    hi VimwikiHeader4 ctermfg=13
    hi VimwikiHeader5 ctermfg=14
    hi VimwikiHeader6 ctermfg=12
+   hi VimwikiLink ctermfg=51
 end
 
 " Must be at the end, because of ctermbg=234 bug.
