@@ -269,6 +269,20 @@ if &t_Co > 255
        hi NonText         ctermfg=239 ctermbg=NONE
        hi SpecialKey      ctermfg=239
    endif
+
+   " Ruby
+   hi link rubyRegexpDelimiter        Special
+   hi link rubyInterpolationDelimiter Delimiter
+   hi link rubyStringDelimiter        Delimiter
+   hi link rubyClass                  Keyword
+   hi link rubyModule                 Keyword
+   hi link rubyKeyword                Keyword
+   hi link rubyOperator               Operator
+   hi link rubyIdentifier             Identifier
+   hi link rubyInstanceVariable       Identifier
+   hi link rubyGlobalVariable         Identifier
+   hi link rubyClassVariable          Identifier
+   hi link rubyConstant               Type
 end
 
 " Must be at the end, because of ctermbg=234 bug.
